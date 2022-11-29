@@ -28,13 +28,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Ganda\\FathomStatsDisplay\\": "src/"
+            "CharlieLangridge\\FathomStatsDisplay\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ganda\\FathomStatsDisplay\\CardServiceProvider"
+                "CharlieLangridge\\FathomStatsDisplay\\CardServiceProvider"
             ]
         }
     },

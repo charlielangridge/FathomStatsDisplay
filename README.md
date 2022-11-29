@@ -58,7 +58,7 @@ Add the card to any of your dashboards
 
 namespace App\Nova\Dashboards;
 
-use Ganda\FathomStatsDisplay\FathomStatsDisplay;
+use CharlieLangridge\FathomStatsDisplay\FathomStatsDisplay;
 use Laravel\Nova\Dashboards\Main as Dashboard;
 
 class Main extends Dashboard

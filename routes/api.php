@@ -1,6 +1,6 @@
 <?php
 
-use Ganda\FathomStatsDisplay\Http\Controllers\FathomStatsController;
+use CharlieLangridge\FathomStatsDisplay\Http\Controllers\FathomStatsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

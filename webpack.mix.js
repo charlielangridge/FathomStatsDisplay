@@ -7,4 +7,4 @@ mix
   .js('resources/js/card.js', 'js')
   .vue({ version: 3 })
   .css('resources/css/card.css', 'css')
-  .nova('ganda/fathom-stats-display')
+  .nova('charlie-langridge/fathom-stats-display')

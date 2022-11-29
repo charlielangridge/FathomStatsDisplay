@@ -1,6 +1,6 @@
 <?php
 
-namespace Ganda\FathomStatsDisplay;
+namespace CharlieLangridge\FathomStatsDisplay;
 
 use Laravel\Nova\Card;
 

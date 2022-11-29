@@ -1,6 +1,6 @@
 <?php
 
-namespace Ganda\FathomStatsDisplay\Http\Controllers;
+namespace CharlieLangridge\FathomStatsDisplay\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

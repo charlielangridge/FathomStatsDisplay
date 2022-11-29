@@ -1,6 +1,6 @@
 <?php
 
-namespace Ganda\FathomStatsDisplay;
+namespace CharlieLangridge\FathomStatsDisplay;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
