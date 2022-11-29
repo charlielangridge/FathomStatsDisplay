@@ -5,7 +5,8 @@
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 ![PHP](https://img.shields.io/badge/PHP-8.0-blue.svg)
-
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/charlielangridge/fathom-stats-display.svg)](https://packagist.org/packages/charlielangridge/fathom-stats-display)
+[![Downloads](https://img.shields.io/packagist/dt/charlielangridge/fathom-stats-display.svg)](https://packagist.org/packages/charlielangridge/fathom-stats-display)
 </div>
 
 ---
