@@ -1,4 +1,5 @@
 # Fathom Stats Display
+#### A Laravel Nova Card to show Fathom Analytics stats.
 
 <div align="left">
 
@@ -26,12 +27,15 @@
 
 ## Getting Started <a name = "getting_started"></a>
 
+*You'll need a Fathom account - if you don't have one, feel free to use our referal code: [https://usefathom.com/ref/BYODNP](https://usefathom.com/ref/BYODNP) - you'll get $10 off your first invoice and we get a little something too*
+
 ### Prerequisites
 
 This package requires the following :
 
 - PHP 8.0 or higher
 - Laravel Nova 4.0 or higher
+- Fathom account with API access
 
 ### Installing
 
