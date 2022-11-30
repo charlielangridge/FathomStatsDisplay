@@ -29,4 +29,9 @@ class FathomStatsDisplay extends Card
     {
         return 'fathom-stats-display';
     }
+
+    public function entityId($entityId = null)
+    {
+        return $entityId ?? env('FATHOM_SITE_ID');
+    }
 }

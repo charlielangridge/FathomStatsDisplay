@@ -15,15 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/siteId', function (Request $request) {
-    return env('FATHOM_SITE_ID');
-});
 Route::get('/refresh', function (Request $request) {
-    foreach ([7,30,60,90] as $day){
+    foreach ([7, 30, 60, 90] as $day) {
         $key = 'fathomStats_'.$day;
         \Illuminate\Support\Facades\Cache::forget($key);
     }
+
     return true;
 });
-Route::get('/getStats/{days?}', FathomStatsController::class);
+Route::get('/getStats/{siteId}/{days?}', FathomStatsController::class);
