@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-2023-12-19: v0.1.3
+2023-12-19: v0.1.4
 --------------------
 * Fix issue with Card.vue where siteId was not available due to Vue 3 props not being imported.
 * Add config/ directory with publishable config file as env() should not be used outside of config files.
