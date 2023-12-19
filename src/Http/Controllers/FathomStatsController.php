@@ -22,7 +22,7 @@ class FathomStatsController extends Controller
             return Cache::get($key);
         }
 
-        $response = Http::withToken(env('FATHOM_TOKEN'))->get('https://api.usefathom.com/v1/aggregations', [
+        $response = Http::withToken(config('fathom-stats-display.fathom_token'))->get('https://api.usefathom.com/v1/aggregations', [
             'entity' => 'pageview',
             'entity_id' => $siteId,
             'aggregates' => implode(',', ['visits', 'uniques', 'pageviews', 'avg_duration', 'bounce_rate']),
@@ -31,7 +31,7 @@ class FathomStatsController extends Controller
 
         $statData = $response->collect()[0];
 
-        $response = Http::withToken(env('FATHOM_TOKEN'))->get('https://api.usefathom.com/v1/aggregations', [
+        $response = Http::withToken(config('fathom-stats-display.fathom_token'))->get('https://api.usefathom.com/v1/aggregations', [
             'entity' => 'pageview',
             'entity_id' => $siteId,
             'aggregates' => implode(',', ['visits', 'uniques', 'pageviews', 'avg_duration', 'bounce_rate']),

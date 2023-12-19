@@ -52,6 +52,12 @@ FATHOM_SITE_ID=
 FATHOM_TOKEN=
 ```
 
+Publish the included config file:
+
+```
+php artisan vendor:publish --provider="CharlieLangridge\FathomStatsDisplay\CardServiceProvider"
+```
+
 That's it, you're ready to go!
 
 ## Usage <a name="usage"></a>
@@ -76,17 +82,24 @@ class Main extends Dashboard
     public function cards()
     {
         return [
-            new FathomStatsDisplay,
+            (new FathomStatsDisplay)->entityId(),
         ];
     }
 }
 ```
+
+You can pass an optional Fathom Site ID to the card's `entityId()` method, but it must be one your API key has access to (e.g. you have multiple fathom sites and want to show multiple different analytics cards on your dashboard). If left empty, it will default to the Site ID you have defined in your .env file.
 
 Stats are cached for an hour, but can be refreshed with the on-card link. The time period for the stats is selectable with the drop-down.
 
 ## Authors <a name = "authors"></a>
 
 - [Charlie Langridge](https://github.com/charlielangridge)
+
+## Contributors <a name = "contributors"></a>
+
+- [Charlie Langridge](https://github.com/charlielangridge)
+- [Michael Burton](https://github.com/MadMikeyB)
 
 ## License
 

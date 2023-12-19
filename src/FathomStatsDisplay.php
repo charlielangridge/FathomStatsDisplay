@@ -32,6 +32,6 @@ class FathomStatsDisplay extends Card
 
     public function entityId($entityId = null)
     {
-        return $entityId ?? env('FATHOM_SITE_ID');
+        return $this->withMeta(['entityId' => $entityId ?? config('fathom-stats-display.fathom_site_id')]);
     }
 }
