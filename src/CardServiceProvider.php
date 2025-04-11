@@ -24,6 +24,10 @@ class CardServiceProvider extends ServiceProvider
             Nova::script('fathom-stats-display', __DIR__.'/../dist/js/card.js');
             Nova::style('fathom-stats-display', __DIR__.'/../dist/css/card.css');
         });
+
+        $this->publishes([
+            __DIR__ . '/../config/fathom-stats-display.php' => config_path('fathom-stats-display.php'),
+         ], 'config');
     }
 
     /**
